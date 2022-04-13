@@ -1,7 +1,7 @@
 import Type from '../src'
 
 test('type of value equals type kind', () => {
-  ;[
+  const values = [
     [false, Type.Kind.BOOLEAN],
     [0, Type.Kind.NUMBER],
     ['', Type.Kind.STRING],
@@ -12,7 +12,9 @@ test('type of value equals type kind', () => {
     [() => {}, Type.Kind.FUNCTION],
     [null, Type.Kind.NULL],
     [void 0, Type.Kind.UNDEFINED],
-  ].forEach(([value, kind]) => {
+  ]
+
+  values.forEach(([value, kind]) => {
     const type = Type.of(value)
     expect(type).toBe(kind)
   })
