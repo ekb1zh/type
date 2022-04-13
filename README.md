@@ -8,7 +8,7 @@ npm i @ekb1zh/type
 
 ### Reason
 
-The problem is that you can't just find out the type of the `null`, `array` and `object` values in runtime. For these three values, the type is always `object`.
+You can't just find out the type of the `null`, `array` and `object` values in runtime. For these three values, the type is always `object`.
 
 ```ts
 typeof null // => 'object'
