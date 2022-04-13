@@ -21,6 +21,16 @@ This little library solves this problem quickly and efficiently.
 ```ts
 import Type from '@ekb1zh/type'
 
+Type.of(null) // => 'NULL'
+Type.of([]) // => 'ARRAY'
+Type.of({}) // => 'OBJECT'
+```
+
+or
+
+```ts
+import Type from '@ekb1zh/type'
+
 Type.of(null) === Type.Kind.NULL // => true
 Type.of([]) === Type.Kind.ARRAY // => true
 Type.of({}) === Type.Kind.OBJECT // => true
