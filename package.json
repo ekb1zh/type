@@ -1,0 +1,65 @@
+{
+  "name": "@ekb1zh/type",
+  "version": "1.0.0",
+  "description": "Simple tool for getting data type",
+  "keywords": [
+    "data",
+    "type"
+  ],
+  "homepage": "https://github.com/ekb1zh/type#readme",
+  "bugs": {
+    "url": "https://github.com/ekb1zh/type/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ekb1zh",
+    "email": "ekb1zh@gmail.com",
+    "url": "https://github.com/ekb1zh"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/type.esm.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ekb1zh/type.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build && husky install",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^3.9.10"
+  },
+  "size-limit": [
+    {
+      "path": "dist/type.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/type.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}
