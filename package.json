@@ -3,8 +3,17 @@
   "version": "2.0.3",
   "description": "Simple tool for getting data type",
   "keywords": [
+    "get",
+    "find",
+    "determine",
+    "detect",
+    "recognize",
+    "identify",
+    "reveal",
+    "clarify",
     "data",
-    "type"
+    "type",
+    "types"
   ],
   "homepage": "https://github.com/ekb1zh/type#readme",
   "bugs": {
