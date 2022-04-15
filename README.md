@@ -26,6 +26,16 @@ Type.of([]) === Type.Kind.ARRAY // => true
 Type.of({}) === Type.Kind.OBJECT // => true
 ```
 
+or
+
+```ts
+import Type from '@ekb1zh/type'
+
+Type.Kind[Type.of(null)] // => 'NULL'
+Type.Kind[Type.of([])] // => 'ARRAY'
+Type.Kind[Type.of({})] // => 'OBJECT'
+```
+
 The complete list of types that this library defines
 
 ```
