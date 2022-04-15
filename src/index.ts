@@ -1,15 +1,15 @@
 namespace Type {
   export enum Kind {
-    BOOLEAN = 'BOOLEAN',
-    NUMBER = 'NUMBER',
-    STRING = 'STRING',
-    SYMBOL = 'SYMBOL',
-    BIGINT = 'BIGINT',
-    OBJECT = 'OBJECT',
-    ARRAY = 'ARRAY',
-    FUNCTION = 'FUNCTION',
-    NULL = 'NULL',
-    UNDEFINED = 'UNDEFINED',
+    BOOLEAN,
+    NUMBER,
+    STRING,
+    SYMBOL,
+    BIGINT,
+    OBJECT,
+    ARRAY,
+    FUNCTION,
+    NULL,
+    UNDEFINED,
   }
 
   export const of = (value: unknown): Kind => {
