@@ -1,4 +1,4 @@
-import Type from '../src'
+import Type from '../dist'
 
 test('type of value equals type kind', () => {
   const values = [
