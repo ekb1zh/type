@@ -1,0 +1,10 @@
+[
+  {
+    "path": "dist/type.cjs.production.min.js",
+    "limit": "1 KB"
+  },
+  {
+    "path": "dist/type.esm.js",
+    "limit": "1 KB"
+  }
+]
