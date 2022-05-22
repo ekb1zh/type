@@ -38,14 +38,14 @@ const invalid: Type.Kind = 'bla-bla-bla'
 The complete list of types that this library defines
 
 ```
-'null'
-'undefined'
-'boolean'
-'number'
-'string'
-'symbol'
-'bigint'
-'function'
-'array'
-'object'
+null
+undefined
+boolean
+number
+string
+symbol
+bigint
+function
+array
+object
 ```
