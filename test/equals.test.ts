@@ -1,17 +1,17 @@
 import Type from '../dist'
 
 test('type of value equals type kind', () => {
-  const values = [
-    [false, Type.Kind.BOOLEAN],
-    [0, Type.Kind.NUMBER],
-    ['', Type.Kind.STRING],
-    [Symbol(), Type.Kind.SYMBOL],
-    [BigInt('0'), Type.Kind.BIGINT],
-    [{}, Type.Kind.OBJECT],
-    [[], Type.Kind.ARRAY],
-    [() => {}, Type.Kind.FUNCTION],
-    [null, Type.Kind.NULL],
-    [void 0, Type.Kind.UNDEFINED],
+  const values: [unknown, Type.Kind][] = [
+    [false, 'boolean'],
+    [0, 'number'],
+    ['', 'string'],
+    [Symbol(), 'symbol'],
+    [BigInt('0'), 'bigint'],
+    [{}, 'object'],
+    [[], 'array'],
+    [() => {}, 'function'],
+    [null, 'null'],
+    [void 0, 'undefined'],
   ]
 
   values.forEach(([value, kind]) => {

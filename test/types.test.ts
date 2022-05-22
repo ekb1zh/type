@@ -1,7 +1,7 @@
 import Type from '../dist'
 
-test(`type of enum as "Type.Kind", not as "typeof Type['Kind']"`, () => {
-  const kind: Type.Kind = Type.Kind.NULL
+test(`getting types like "Type.Kind", not like "typeof Type['Kind']"`, () => {
+  const kind: Type.Kind = 'array'
 
   console.log({
     kind,
