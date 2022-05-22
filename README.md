@@ -18,35 +18,34 @@ typeof {} // => 'object'
 
 This little library solves this problem quickly and efficiently.
 
-```ts
+```tsx
 import Type from '@ekb1zh/type'
 
-Type.of(null) === Type.Kind.NULL // => true
-Type.of([]) === Type.Kind.ARRAY // => true
-Type.of({}) === Type.Kind.OBJECT // => true
+Type.of(null) // => 'null'
+Type.of([]) // => 'array'
+Type.of({}) // => 'object'
 ```
 
-or
+Also you can use `Kind` for type checking.
 
-```ts
+```tsx
 import Type from '@ekb1zh/type'
 
-Type.Kind[Type.of(null)] // => 'NULL'
-Type.Kind[Type.of([])] // => 'ARRAY'
-Type.Kind[Type.of({})] // => 'OBJECT'
+const valid: Type.Kind = 'null'
+const invalid: Type.Kind = 'bla-bla-bla'
 ```
 
 The complete list of types that this library defines
 
 ```
-BOOLEAN
-NUMBER
-STRING
-SYMBOL
-BIGINT
-OBJECT
-ARRAY
-FUNCTION
-NULL
-UNDEFINED
+'null'
+'undefined'
+'boolean'
+'number'
+'string'
+'symbol'
+'bigint'
+'function'
+'array'
+'object'
 ```
